@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "e:\\eclipse-workspace\\Rest_Test\\build\\classes\\shiro-core-1.3.2.jar",
+        "e:\\eclipse-workspace\\Rest_Test\\build\\classes\\json-canonicalizer.jar",
+        "e:\\eclipse-workspace\\Rest_Test\\build\\classes\\org.json.jar"
+    ]
+}
