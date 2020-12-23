@@ -1,7 +1,3 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
 ## Folder Structure
 
 The workspace contains two folders by default, where:
@@ -9,6 +5,42 @@ The workspace contains two folders by default, where:
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
 
-## Dependency Management
+## Input
 
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+HTTP message in taken as input in JSON format, JSON structure is
+
+
+{
+  "service": "ec2",
+  "region": "us-east-1",
+  "key": "23478207027842073230762374023",
+  "endpoint": "https://ec2.amazonaws.com",
+  "requestMethod": "GET",
+  "algorithm": "AWS4-HMAC-SHA256",
+  "headers": {
+    "Content-Type": "application/json",
+    "x-amz-Date": "Mon, 12 Nov 2007 10:49:58 GMT"
+  },
+  "body": null
+}
+
+## Driver Code
+Signature sn = new Signature(<Input JSON in String format>);
+sn.getSignature();
+
+
+This driver code is written in APP.java, one can check it as a reference
+
+
+## Output
+
+Output is the signature as shown below:
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+## Dependencies
+1. shiro-core.jar
+2. org.json.jar
+3. json-canonicalizer.jar
+
+
+    
