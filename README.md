@@ -38,9 +38,9 @@ Output is the signature as shown below:
 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 ## Dependencies
-1. shiro-core.jar
-2. org.json.jar
-3. json-canonicalizer.jar
+- shiro-core.jar
+- org.json.jar
+- json-canonicalizer.jar
 
 
     
